@@ -1,0 +1,23 @@
+{
+    "asset": "82527bd9077d24bfabf91a581d9218cb",
+    "fileName": "019e21e2-1ca5-796c-927a-7d341d0bd272.glb",
+    "prompt": "A blooming bioluminescent alien flower with petals fully unfurled like an open lotus, wide hollow cavity in the center, distinct separated petals radiating outward, glowing stamens lining the inner cavity, solid thick stem and base. Whimsical Pixar 3D style.",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "c21d42d97deab442cafddedff3e14be7",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}

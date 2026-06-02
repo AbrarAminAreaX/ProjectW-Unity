@@ -29,7 +29,7 @@ MonoBehaviour:
   m_Name: Android Settings
   m_EditorClassIdentifier: Unity.XR.Management::UnityEngine.XR.Management.XRGeneralSettings
   m_LoaderManagerInstance: {fileID: 5603587489087933377}
-  m_InitManagerOnStart: 1
+  m_InitManagerOnStart: 0
 --- !u!114 &5603587489087933377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,8 +45,7 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 1
   m_AutomaticRunning: 1
-  m_Loaders:
-  - {fileID: 11400000, guid: 9bdb540e66447467389f07d4860a953f, type: 2}
+  m_Loaders: []
 --- !u!114 &7178384795681674812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +59,7 @@ MonoBehaviour:
   m_Name: iPhone Settings
   m_EditorClassIdentifier: Unity.XR.Management::UnityEngine.XR.Management.XRGeneralSettings
   m_LoaderManagerInstance: {fileID: 8466331699667918166}
-  m_InitManagerOnStart: 1
+  m_InitManagerOnStart: 0
 --- !u!114 &8466331699667918166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,5 +75,4 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders:
-  - {fileID: 11400000, guid: f4df8ee2f76f5473b87158546c92bd22, type: 2}
+  m_Loaders: []

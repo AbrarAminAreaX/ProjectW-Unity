@@ -1,61 +1,88 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine;                                                                                                                                                                                              
+  using UnityEngine.SceneManagement;                                                                                                                                                                              
+  //using FlutterEmbedUnity;  // for SendToFlutter                                                                                                                                                                  
+                                                                                                                                                                                                                  
+  public class Rob11SceneManager : MonoBehaviour                                                                                                                                                                  
+  {                                                      
+      // Field name matches the serialized reference already in Rob11Scene.unity
+      // (audioBridge), so the Inspector-wired link survives without re-dragging.
+      [Tooltip("GeminiAudioBridge on the Robot GameObject")]
+      public GeminiAudioBridge audioBridge;
 
-/// <summary>
-/// Scene controller for Rob11Scene when embedded in Flutter.
-/// Forwards Gemini audio messages from Flutter to the GeminiAudioBridge.
-///
-/// The GameObject MUST be named "SceneManager" so that Flutter's
-/// sendToUnity("SceneManager", ...) reaches it.
-/// </summary>
-public class Rob11SceneManager : MonoBehaviour
-{
-    [Header("Gemini Audio Bridge")]
-    public GeminiAudioBridge audioBridge;
+      void Start()
+      {
+          SendToFlutter.Send("scene_loaded");
+      }
 
-    void Start()
-    {
-        SendToFlutter.Send("scene_loaded");
-        SendToFlutter.Send("ready_for_audio");
-    }
+      public void LoadScene(string sceneName)
+      {
+          SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+      }
 
-    public void LoadScene(string sceneName)
-    {
-        if (string.IsNullOrEmpty(sceneName)) return;
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-    }
+      public void SetAIResponse(string text)
+      {
+          if (audioBridge != null) audioBridge.SetAIResponse(text);
+      }
 
-    // ── Gemini Audio Messages from Flutter ──
+      public void PlayGeminiAudio(string base64Mp3)
+      {
+          if (audioBridge != null) audioBridge.PlayAudio(base64Mp3);
+      }
 
-    public void PlayGeminiAudio(string base64Audio)
-    {
-        if (audioBridge != null)
-            audioBridge.PlayAudio(base64Audio);
-        else
-            Debug.LogError("[SceneManager] GeminiAudioBridge not assigned!");
-    }
+      public void StopAudio()
+      {
+          if (audioBridge != null) audioBridge.StopAudio();
+      }
 
-    public void SetAIResponse(string responseText)
-    {
-        if (audioBridge != null)
-            audioBridge.SetAIResponse(responseText);
-    }
+      // Flutter invokes these when the native LiveChat pipeline starts/stops
+      // playing AI audio, so the bridge can show/hide the mouth wave visualizer.
+      public void OnSpeakingStart(string _ignored)
+      {
+          if (audioBridge != null) audioBridge.OnSpeakingStart();
+      }
 
-    public void StopAudio(string message)
-    {
-        if (audioBridge != null)
-            audioBridge.StopAudio();
-    }
+      public void OnSpeakingEnd(string _ignored)
+      {
+          if (audioBridge != null) audioBridge.OnSpeakingEnd();
+      }
 
-    // ── Stubs ──
-    public void EnableAR(string message) { }
-    public void DisableAR(string message) { }
-    public void ToggleBackground(string message) { }
-    public void SetRobotAnimation(string message) { }
-    public void ResetARPlacement(string message) { }
+      // ── Spirit guardian (Western_World_spiritGuardian scene) ────────────
+      // Direct Flutter triggers for the guardian's playful fly/hide loop.
+      //   sendToUnity("SceneManager", "SummonGuardian", "")
+      //   sendToUnity("SceneManager", "DismissGuardian", "")
+      //   sendToUnity("SceneManager", "UserTranscript", "where are you...")
+      public void SummonGuardian(string _ignored)
+      {
+          if (SpiritGuardianFlyController.Instance != null)
+              SpiritGuardianFlyController.Instance.Summon();
+      }
 
-    public void GetAnimationList(string message)
-    {
-        SendToFlutter.Send("animation_list:");
-    }
-}
+      public void DismissGuardian(string _ignored)
+      {
+          if (SpiritGuardianFlyController.Instance != null)
+              SpiritGuardianFlyController.Instance.SendBackToHiding();
+      }
+
+      // Optional: pass the USER's transcript so the guardian reacts to what
+      // the player says (more reliable than scanning Kai's reply).
+      public void UserTranscript(string text)
+      {
+          if (SpiritGuardianFlyController.Instance != null && !string.IsNullOrEmpty(text))
+              SpiritGuardianFlyController.Instance.HandleAIText(text.ToLowerInvariant());
+      }
+
+      // Flutter streams a float (as string) with each audio chunk; we use it
+      // to drive the wave visualizer amplitude.
+      public void OnAudioAmplitude(string amplitudeStr)
+      {
+          if (audioBridge == null) return;
+          float amp;
+          if (float.TryParse(amplitudeStr,
+              System.Globalization.NumberStyles.Float,
+              System.Globalization.CultureInfo.InvariantCulture,
+              out amp))
+          {
+              audioBridge.SetAmplitude(amp);
+          }
+      }
+  }

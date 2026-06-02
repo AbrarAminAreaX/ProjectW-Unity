@@ -1,0 +1,28 @@
+{
+    "asset": "c21d42d97deab442cafddedff3e14be7",
+    "fileName": "019e21de-f315-7b57-8ffb-fd8688aa8d47.png",
+    "prompt": "3D concept reference render of a blooming bioluminescent alien flower, fully unfurled like an open lotus, with a wide hollow empty cavity in the center large enough to enclose a small character. Petals in lime green, warm yellow, and soft pink, translucent with subsurface scattering. Several distinct separated petals radiating outward from the center, glowing stamens lining the inner cavity. Solid thick stem and base. Whimsical Pixar 3D art style, soft volumetric lighting, vertical orientation. Three-quarter front view, isolated on a clean neutral gray studio background, full object visible, no characters, no creatures inside the cavity, empty interior.",
+    "negativePrompt": "",
+    "model": "gemini-3.0-pro",
+    "modelName": "Gemini 3.0 Pro",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

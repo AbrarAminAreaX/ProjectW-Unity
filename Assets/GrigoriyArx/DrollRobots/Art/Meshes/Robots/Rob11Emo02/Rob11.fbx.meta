@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 10fc09ce5d97e5e438937a2f9e74eeda
+AssetOrigin:
+  serializedVersion: 1
+  productId: 308326
+  packageName: Emo Robot 02
+  packageVersion: 1.0
+  assetPath: Assets/GrigoriyArx/DrollRobots/Art/Meshes/Robots/Rob11Emo02/Rob11.fbx
+  uploadId: 725028
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -41,8 +48,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -98,7 +103,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -127,7 +132,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1004,7 +1009,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1047,6 +1052,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -1186,10 +1194,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 308326
-  packageName: Emo Robot 02
-  packageVersion: 1.0
-  assetPath: Assets/GrigoriyArx/DrollRobots/Art/Meshes/Robots/Rob11Emo02/Rob11.fbx
-  uploadId: 725028
