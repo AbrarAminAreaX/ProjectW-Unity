@@ -1,0 +1,28 @@
+{
+    "asset": "e3ca6c658e4f546fc9371028056bab78",
+    "fileName": "019e91a6-957c-7d3b-afee-0bb5c1a93fd8.png",
+    "prompt": "A clean modern geometric capital letter \"W\" logo icon, sharp angular minimal symmetrical strokes, glowing lime-green and white neon edges with subtle soft bloom, perfectly centered, flat vector tech style, plain solid black background, only the single letter W, no other text or shapes, crisp high contrast",
+    "negativePrompt": "",
+    "model": "gemini-3.1-flash",
+    "modelName": "Gemini 3.1 Nano Banana 2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

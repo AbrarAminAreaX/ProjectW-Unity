@@ -1,0 +1,28 @@
+{
+    "asset": "68013127bc8e64b308ec8305611ab086",
+    "fileName": "019e87e4-ec71-7982-89a9-af43c527ed12.jpg",
+    "prompt": "Stylized 3D-rendered western desert town at deep night, full silver moon high in deep indigo starry sky with subtle nebula and milky way band, distant moonlit mesa silhouettes and red rock cliffs, weathered wooden saloon with glowing warm lantern windows, windmill silhouette, tall saguaro cacti with cool blue rim light, sand path lit by lantern pools, soft volumetric haze, cinematic stylized illustration, 360 panoramic skybox, wild west",
+    "negativePrompt": "",
+    "model": "skybox-cinematic",
+    "modelName": "Cinematic",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

@@ -1,0 +1,28 @@
+{
+    "asset": "cfcd9f13dff514fac9b4842d74077ff7",
+    "fileName": "019e91a5-9ac0-7941-8420-460a358e04cc.jpg",
+    "prompt": "A glowing stylized digital heart icon, warm coral-red and soft rose-pink with a radiant luminous inner glow, smooth rounded symmetrical shape, emissive neon edges with soft bloom, centered, plain solid black background, no text, app splash hero icon, high detail",
+    "negativePrompt": "",
+    "model": "game-ui-essentials-2",
+    "modelName": "Game UI Essentials 2.0",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 2048,
+        "height": 2048
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

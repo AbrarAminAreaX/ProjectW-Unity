@@ -1,0 +1,28 @@
+{
+    "asset": "d272f049c170e486b8d4a35fab1e5295",
+    "fileName": "019e8808-060e-7b6a-bace-5646c359711d.jpg",
+    "prompt": "Stylized 3D-rendered cartoon western desert canyon at warm golden-hour sunset, smooth Pixar/Disney cartoon aesthetic, soft rounded forms and vibrant saturated colors. Red-orange sandstone canyon walls with natural rock arches and stacked layered cliffs, tall green saguaro cacti scattered on rocks, weathered wooden water tower and small log cabin on a left ledge, distant rust-red rock spires on horizon, weathered wooden saloon on stilts with warm glowing yellow windows and tall metal-bladed windmill on right cliff, wooden post-and-rail fences in foreground, sandy desert path winding through, small tufts of grass and red wildflowers, soft pink-purple-orange gradient sky with sun glow at horizon, stylized rounded fluffy clouds tinted pink and lavender, warm atmospheric haze. High-quality cinematic stylized illustration, 360 panoramic seamless skybox, mobile game environment art, ultra detailed",
+    "negativePrompt": "",
+    "model": "skybox-cinematic",
+    "modelName": "Cinematic",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

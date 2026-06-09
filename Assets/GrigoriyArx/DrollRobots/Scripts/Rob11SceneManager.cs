@@ -71,6 +71,32 @@ using UnityEngine;
               SpiritGuardianFlyController.Instance.HandleAIText(text.ToLowerInvariant());
       }
 
+      // ── Western World day/night/brightness ─────────────────────────────
+      //   sendToUnity("SceneManager", "SetDayTime",     "")
+      //   sendToUnity("SceneManager", "SetNightTime",   "")
+      //   sendToUnity("SceneManager", "BrightnessUp",   "")
+      //   sendToUnity("SceneManager", "BrightnessDown", "")
+      public void SetDayTime(string _ignored)
+      {
+          if (WesternWorldLightingController.Instance != null)
+              WesternWorldLightingController.Instance.SetDay();
+      }
+      public void SetNightTime(string _ignored)
+      {
+          if (WesternWorldLightingController.Instance != null)
+              WesternWorldLightingController.Instance.SetNight();
+      }
+      public void BrightnessUp(string _ignored)
+      {
+          if (WesternWorldLightingController.Instance != null)
+              WesternWorldLightingController.Instance.BrightnessUp();
+      }
+      public void BrightnessDown(string _ignored)
+      {
+          if (WesternWorldLightingController.Instance != null)
+              WesternWorldLightingController.Instance.BrightnessDown();
+      }
+
       // Flutter streams a float (as string) with each audio chunk; we use it
       // to drive the wave visualizer amplitude.
       public void OnAudioAmplitude(string amplitudeStr)

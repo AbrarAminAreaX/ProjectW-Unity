@@ -1,0 +1,28 @@
+{
+    "asset": "da168d89faab6448a9d51c2d45142691",
+    "fileName": "019e8811-5978-79ef-8634-31bdc5cff4db.jpg",
+    "prompt": "Stylized cartoon sky only, no ground no terrain no mountains no buildings no cacti, pure sky everywhere. Soft pastel sunset gradient blending lavender purple at top into warm pink and peach into golden orange and yellow near the horizon, fluffy rounded stylized cumulus clouds tinted soft pink and lavender catching warm light, a hint of small distant birds, gentle volumetric atmospheric haze, Pixar Disney cartoon aesthetic, dreamy painterly mobile-game art style, ultra high quality, 360 panoramic seamless skybox, sky-only background, smooth gradient horizon",
+    "negativePrompt": "",
+    "model": "skybox-cinematic",
+    "modelName": "Cinematic",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}
