@@ -25,6 +25,17 @@ public class BackgroundBlurFeature : MonoBehaviour
 
     void Start()
     {
+        // If a Volume is already configured on this object (e.g. set up in the
+        // scene), don't add a duplicate at runtime — just make sure post FX is on.
+        var existing = GetComponent<Volume>();
+        if (existing != null)
+        {
+            var camDataExisting = GetComponent<UniversalAdditionalCameraData>();
+            if (camDataExisting != null)
+                camDataExisting.renderPostProcessing = true;
+            return;
+        }
+
         _volume = gameObject.AddComponent<Volume>();
         _volume.isGlobal = true;
         _volume.priority = 100;

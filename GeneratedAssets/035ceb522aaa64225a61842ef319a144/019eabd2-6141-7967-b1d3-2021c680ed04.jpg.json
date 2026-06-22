@@ -1,0 +1,28 @@
+{
+    "asset": "035ceb522aaa64225a61842ef319a144",
+    "fileName": "019eabd2-6141-7967-b1d3-2021c680ed04.jpg",
+    "prompt": "Pure tropical daytime sky only, no land, no horizon objects, no buildings, no palm trees, no terrain. Clear vivid turquoise-to-cyan gradient sky fading to warm pale aqua near the horizon, soft scattered white cumulus clouds, bright warm golden-hour tropical sun, gentle hazy atmosphere, paradise island sky, high dynamic range, seamless 360 panoramic sky dome, photorealistic cinematic lighting.",
+    "negativePrompt": "",
+    "model": "skybox-cinematic",
+    "modelName": "Cinematic",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}

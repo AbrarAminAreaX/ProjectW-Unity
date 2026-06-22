@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 1208744480}
   - component: {fileID: 1208744479}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Background_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540856284}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
@@ -1633,6 +1633,7 @@ GameObject:
   - component: {fileID: 1816692475}
   - component: {fileID: 1816692477}
   - component: {fileID: 1816692476}
+  - component: {fileID: 1816692478}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1680,6 +1681,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rob11SceneManager
   audioBridge: {fileID: 2062101342}
+--- !u!114 &1816692478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816692473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538134d9c351c490b88422f602067a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityCanvasBackground
+  targetImage: {fileID: 1208744479}
+  autoCreateBackground: 0
+  backgroundSortingOrder: 0
+  fadeDuration: 0.35
 --- !u!1 &2062101315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3816680439377690400, guid: 225c410353041e64fa20cd0de74081b0, type: 3}

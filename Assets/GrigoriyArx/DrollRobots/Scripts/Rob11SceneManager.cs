@@ -19,6 +19,25 @@ using UnityEngine;
           SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
       }
 
+      // Flutter forwards the on-screen joystick as "x,y" (normalized, [-1..1]).
+      // The embedded Unity view doesn't reliably deliver drag touches, so the
+      // joystick is driven from a Flutter widget instead.
+      //   sendToUnity("SceneManager", "SetJoystick", "0.5,-0.3")  // "0,0" on release
+      public void SetJoystick(string xy)
+      {
+          if (SpiritGuardianJoystickController.Instance == null || string.IsNullOrEmpty(xy)) return;
+          var parts = xy.Split(',');
+          if (parts.Length != 2) return;
+          float x, y;
+          if (float.TryParse(parts[0], System.Globalization.NumberStyles.Float,
+                  System.Globalization.CultureInfo.InvariantCulture, out x) &&
+              float.TryParse(parts[1], System.Globalization.NumberStyles.Float,
+                  System.Globalization.CultureInfo.InvariantCulture, out y))
+          {
+              SpiritGuardianJoystickController.Instance.SetExternalInput(x, y);
+          }
+      }
+
       public void SetAIResponse(string text)
       {
           if (audioBridge != null) audioBridge.SetAIResponse(text);

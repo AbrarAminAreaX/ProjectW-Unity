@@ -39,6 +39,7 @@ public class BootstrapManager : MonoBehaviour
     public void EnableAR(string message) { }
     public void DisableAR(string message) { }
     public void ToggleBackground(string message) { }
+    public void SetBackground(string message) { }
     public void SetRobotAnimation(string message) { }
     public void ResetARPlacement(string message) { }
 

@@ -17,9 +17,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ManLipSync.unity
     guid: 4e79eee5f7d93410a80757f8496ac19c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Western_World_spiritGuardian.unity
     guid: b9c0d77032fb54db2b7d9f26aa508550
+  - enabled: 0
+    path: Assets/Scenes/Onboarding_Animation.unity
+    guid: 57a84ae2f68db4819b6be091ffec1c00
+  - enabled: 1
+    path: Assets/Scenes/Rob11Scene_ShipWorld.unity
+    guid: 6e4ec265725c7486cbcd30bf81d914fe
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: aeffbe19fb7414b98aa49414e0661484, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 9b2176a01957f4ab0b95ff3520ca0381, type: 2}
